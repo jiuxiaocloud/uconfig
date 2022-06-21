@@ -19,6 +19,11 @@ sudo apt autoremove
 sudo apt-get update
 sudo apt-get upgrade
 
+##SM Player
+sudo add-apt-repository ppa:rvm/smplayer 
+sudo apt-get update 
+sudo apt-get install smplayer smplayer-themes smplayer-skins 
+
 ##同步系统时间
 #sudo apt-get install ntpdate
 #sudo ntpdate cn.pool.ntp.org
