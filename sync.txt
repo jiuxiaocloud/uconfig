@@ -1,5 +1,0 @@
-#sync 涉及插件"code setting sync"和gitee码云平台
-#参见网址 https://www.jianshu.com/p/465396c9686f，因涉及
-gist:  
-access_token:  
-#私人隐私问题不便展示

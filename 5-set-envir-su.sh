@@ -2,7 +2,7 @@
 ##limit
 sudo echo '###limit' >> /etc/bash.bashrc
 sudo echo 'ulimit -s unlimited' >> /etc/bash.bashrc
-sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games' >> /etc/bash.bashrc
+sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' >> /etc/bash.bashrc
 cd /etc
 ##cuda-environment-set
 cd /etc
@@ -18,17 +18,6 @@ sudo echo '###Cuda' >>/etc/ld.so.conf
 sudo echo '/usr/local/cuda/lib64' >>/etc/ld.so.conf
 sudo ldconfig 
 nvcc -V
-
-##intel-environment-set
-cd /etc/
-sudo echo "###intelpsxe" >> /etc/bash.bashrc
-sudo echo "source /opt/intel/parallel_studio_xe_2019/psxevars.sh intel64" >> /etc/bash.bashrc
-sudo echo "source /opt/intel/compilers_and_libraries_2019/linux/bin/compilervars.sh intel64" >> /etc/bash.bashrc    #发现在compilers_and_libraries_2019以及compilers_and_libraries_2019.4.243下有mkl、mpi、tbb
-sudo echo "source /opt/intel/mkl/bin/mklvars.sh intel64" >> /etc/bash.bashrc
-sudo echo "source /opt/intel/impi/2019.4.243/intel64/bin/mpivars.sh" >> /etc/bash.bashrc
-sudo echo "source /opt/intel/tbb/bin/tbbvars.sh intel64" >> /etc/bash.bashrc            
-cat /etc/bash.bashrc
-source /etc/bash.bashrc
 
 ##tex-environment
 #sudo echo '##Texlive' >>/etc/profile
