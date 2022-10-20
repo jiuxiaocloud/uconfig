@@ -67,6 +67,8 @@ sudo apt-get upgrade
 
 ##git
 sudo apt-get --purge remove git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
 sudo apt-get install git
 #sudo chmod 777 /root/.ssh
 git config --global user.name “Jiuxiaoyun”
