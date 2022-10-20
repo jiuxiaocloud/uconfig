@@ -3,21 +3,6 @@
 sudo echo '###limit' >> /etc/bash.bashrc
 sudo echo 'ulimit -s unlimited' >> /etc/bash.bashrc
 sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' >> /etc/bash.bashrc
-cd /etc
-##cuda-environment-set
-cd /etc
-sudo echo 'export CPATH=/usr/local/cuda/include${CPATH:+:${CPATH}}' >> /etc/bash.bashrc
-sudo echo 'export CUDA_PATH=/usr/local/cuda ' >> /etc/bash.bashrc
-sudo echo 'export CUDA_BIN_PATH=/usr/local/cuda/bin' >> /etc/bash.bashrc
-sudo echo 'export PATH=/usr/local/cuda/bin:$PATH${PATH:+:${PATH}}' >> /etc/bash.bashrc
-sudo echo 'export LD_LIBRARY_PATH=/usr/local/cudab64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> /etc/bash.bashrc
-sudo echo 'echo "Cuda"' >> /etc/bash.bashrc
-sudo echo 'nvcc --version' >> /etc/bash.bashrc
-
-sudo echo '###Cuda' >>/etc/ld.so.conf
-sudo echo '/usr/local/cuda/lib64' >>/etc/ld.so.conf
-sudo ldconfig 
-nvcc -V
 
 ##tex-environment
 #sudo echo '##Texlive' >>/etc/profile
@@ -34,24 +19,6 @@ nvcc -V
 #sudo echo 'MANPATH_MAP /usr/local/texlive/2021/bin/x86_64-linux /usr/local/texlive/2021/texmf-dist/doc/man' >>/etc/manpath.config
 #source /etc/manpath.config
 #tex --version
-
-##tecplot
-cd /etc/
-ls -l bash*
-sudo echo '###tecplot' >>/etc/bash.bashrc
-sudo echo 'echo "tecplot begin"' >>/etc/bash.bashrc
-sudo echo 'export PATH=/usr/local/tecplot360ex/bin:$PATH' >>/etc/bash.bashrc
-sudo echo 'export TECPHYFILE=$HOME/.tecplot.phy' >>/etc/bash.bashrc
-sudo echo 'echo "texplot ok"' >>/etc/bash.bashrc
-cat  /etc/bash.bashrc
-source /etc/bash.bashrc
-sudo cp -rf /home/ljl/Documents/uconfig/tecplot.png /usr/local/tecplot360ex
-sudo echo '[Desktop Entry]' >>/usr/share/applications/tecplot.desktop
-sudo echo 'Name=tecplot2015' >>/usr/share/applications/tecplot.desktop
-sudo echo 'Type=Application' >>/usr/share/applications/tecplot.desktop
-sudo echo 'Exec=/usr/local/tecplot360ex/bin/tec360' >>/usr/share/applications/tecplot.desktop
-sudo echo 'Icon=/usr/local/tecplot360ex/tecplot.png' >>/usr/share/applications/tecplot.desktop
-sudo echo 'Terminal=false' >>/usr/share/applications/tecplot.desktop
 
 ##ROCm
 sudo echo '###ROCM' >>/etc/bash.bashrc
