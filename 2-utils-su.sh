@@ -28,10 +28,11 @@ sudo apt-get -y install openssh-server
 sudo service ssh start
 sudo ps -e|grep ssh
 sudo apt-get -y install net-tools
-ifconfig
+
 sudo apt autoremove
 sudo apt-get update
 sudo apt-get upgrade
+ifconfig
 
 ##wakeonlan
 # sudo apt-get install ethtool

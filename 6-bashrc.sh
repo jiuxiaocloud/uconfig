@@ -10,7 +10,8 @@ echo "CPATH="           $CPATH
 echo " "
 echo "LD_LIBRARY_PATH=" $LD_LIBRARY_PATH
 echo " "
-sleep 2s
+
+sleep 1s
 clear
 
 ###NVHPC
