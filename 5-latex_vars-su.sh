@@ -20,16 +20,6 @@ sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 #source /etc/manpath.config
 #tex --version
 
-##ROCm
-sudo echo '###ROCM' >>/etc/bash.bashrc
-sudo echo 'export PATH=$PATH:/opt/rocm-5.0.0/bin:/opt/rocm-5.0.0/opencl/bin' >>/etc/bash.bashrc
-sudo echo 'export LIBRARY_PATH=/opt/rocm-5.0.0b:$LIBRARY_PATH' >>/etc/bash.bashrc
-sudo echo 'export CPATH=$CPATH:/opt/rocm-5.0.0/include' >>/etc/bash.bashrc
-sudo echo 'export HIP_PATH=/home/ljl/Downloads/hipify-clang/bin #depends' >>/etc/bash.bashrc
-sudo echo 'export HIP_PLATFORM=nvidia 	#amd' >>/etc/bash.bashrc
-sudo echo 'echo "ROCm"' >>/etc/bash.bashrc
-sudo echo 'hipcc --version' >>/etc/bash.bashrc
-
 ##clear
 sudo echo '#sleep 5s' >>/etc/bash.bashrc
 sudo echo 'clear' >>/etc/bash.bashrc
