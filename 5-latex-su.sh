@@ -1,9 +1,3 @@
-##sudo bash 
-##limit
-sudo echo '###limit' >> /etc/bash.bashrc
-sudo echo 'ulimit -s unlimited' >> /etc/bash.bashrc
-sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin' >> /etc/bash.bashrc
-
 ##tex-environment
 #sudo echo '##Texlive' >>/etc/profile
 #sudo echo 'export MANPATH=${MANPATH}:/usr/local/texlive/2021/texmf-dist/doc/man' >>/etc/profile
@@ -19,8 +13,4 @@ sudo echo 'export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 #sudo echo 'MANPATH_MAP /usr/local/texlive/2021/bin/x86_64-linux /usr/local/texlive/2021/texmf-dist/doc/man' >>/etc/manpath.config
 #source /etc/manpath.config
 #tex --version
-
-##clear
-sudo echo '#sleep 5s' >>/etc/bash.bashrc
-sudo echo 'clear' >>/etc/bash.bashrc
 

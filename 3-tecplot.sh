@@ -8,3 +8,5 @@
 #因此只需将tecplot安装目录下的tecplotex360/bin/mesa路径加入到Linux系统的动态库路径LD_LIBRARY_PATH中，
 #即在~/.bashrc配置文件中加入如下代码（我的tecplot目录是放在家目录下的）
 rm ./360ex_2017r3/bin/libfreetype.so.6
+ln -s ./360ex_2017r3/bin/mesa/* ../
+#add  "127.0.0.1 download.tecplot.com" > /etc/hosts

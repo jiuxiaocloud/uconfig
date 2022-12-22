@@ -1,5 +1,5 @@
 ##卸载自带不常用软件
-sudo dpkg --list
+#sudo dpkg --list
 sudo apt-get -y --purge remove libreoffice-common
 sudo apt-get -y --purge remove firefox
 sudo apt-get -y --purge remove thunderbird
@@ -16,7 +16,7 @@ sudo apt-get -y install vlc
 sudo apt-get -y install gnome-tweaks #for 20.04 && 22.04 
 sudo apt-get -y install git
 ##同步系统时间
-sudo apt-get install ntpdate
+sudo apt-get -y install ntpdate
 sudo ntpdate cn.pool.ntp.org
 sudo hwclock --systohc
 ##tweak
@@ -25,14 +25,15 @@ sudo hwclock --systohc
 ##ssh
 sudo apt-get -y install openssh-client
 sudo apt-get -y install openssh-server
+sudo apt-get -y install net-tools
 sudo service ssh start
 sudo ps -e|grep ssh
-sudo apt-get -y install net-tools
+ifconfig
 
 sudo apt autoremove
 sudo apt-get update
 sudo apt-get upgrade
-ifconfig
+
 
 ##wakeonlan
 # sudo apt-get install ethtool
