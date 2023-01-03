@@ -1,5 +1,4 @@
 ##git installed
-#sudo chmod 777 /root/.ssh
 git config --global user.name “Jiuxiaoyun”
 git config --global user.email “3292913147@qq.com”
 git config --global --list

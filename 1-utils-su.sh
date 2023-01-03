@@ -51,16 +51,4 @@ sudo apt-get upgrade
 #read -p "echo "UUID=output of blkid $dev ntfs defaults,utf8,uid=1000,gid=1000  0  2" in it, 完成按Enter "
 #source /etc/fstab
 
-##注释code和edge的ppa源
-# cd /etc/apt/sources.list.d
-# ls -l
-# sudo awk '{print "#" $0 > "microsoft-edge.list"}' microsoft-edge.list     #awk是对每行都添加字符,参照https://blog.csdn.net/laobai1015/article/details/98628860
-# sudo awk '{print "#" $0 > "vscode.list"}' vscode.list                                       # >./vscode.list表示对文件保存修改
-# cat  /etc/apt/sources.list.d/microsoft-edge.list
-# cat  /etc/apt/sources.list.d/vscode.list
-# sudo apt-get update
-# sudo apt-get upgrade
-
-#shutdown -r now
-
 

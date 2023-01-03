@@ -27,6 +27,3 @@
 
 # $ export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/comm_libs/mpi/bin:$PATH
 # $ export MANPATH=$MANPATH:/opt/nvidia/hpc_sdk/Linux_x86_64/22.5/comm_libs/mpi/man
-
-# Please check https://developer.nvidia.com for documentation,
-# use of NVIDIA HPC SDK software, and other questions.
