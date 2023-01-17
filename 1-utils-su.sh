@@ -34,21 +34,11 @@ sudo apt autoremove
 sudo apt-get update
 sudo apt-get upgrade
 
-
-##wakeonlan
-# sudo apt-get install ethtool
-# sudo ethtool eth0 |grep Wake-on
-# sudo apt-get install wakeonlan
-# sudo lshw -c network | grep serial
-
 ##挂载硬盘
 #sudo fdisk -l
-#read -p "输入要挂载的磁盘全名，eg：/dev/..,完成按Enter" disk
-#read -p "硬盘挂载目录，eg：/Files" dev
-#mkdir $dev 
 #sudo blkid $disk
 #sudo gedit /etc/fstab
-#read -p "echo "UUID=output of blkid $dev ntfs defaults,utf8,uid=1000,gid=1000  0  2" in it, 完成按Enter "
+#/dev/sda1 ntfs defaults,utf8,uid=1000,gid=1000  0  2
 #source /etc/fstab
 
 
